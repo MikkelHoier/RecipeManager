@@ -30,13 +30,19 @@ namespace RecipeManager.Gui
         public MainWindow()
         {
             InitializeComponent();
-			handler = new DBHandler();			;
+			handler = new DBHandler();
 			FillIngredientsDataGrid();
+			FillAllIngredientsDataGrid();
         }
 
-		public void FillIngredientsDataGrid()
+		public void FillAllIngredientsDataGrid()
 		{
 			dataGridAllIngredients.ItemsSource = handler.GetAllIngredients();
 		}		
+
+		public void FillIngredientsDataGrid()
+		{
+			dataGridIngredients.ItemsSource = handler.GetAllIngredients();
+		}
 	}
 }

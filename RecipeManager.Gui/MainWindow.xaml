@@ -90,7 +90,17 @@
             </TabItem>
             <TabItem x:Name="tabIngredients"
                      Header="Ingredienser">
-                <Grid Background="#FEFEFE" />
+                <Grid Background="#FEFEFE" >
+                    <Label Content="Ingredienser:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                    <DataGrid x:Name="dataGridIngredients" HorizontalAlignment="Left" Height="271" Margin="10,41,0,0" VerticalAlignment="Top" Width="220"/>
+                    <Label Content="Ny Ingrediens:" HorizontalAlignment="Left" Margin="243,41,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Navn:" HorizontalAlignment="Left" Margin="260,72,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Pris:" HorizontalAlignment="Left" Margin="260,103,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Type:" HorizontalAlignment="Left" Margin="260,134,0,0" VerticalAlignment="Top"/>
+                    <Button x:Name="buttonCreateIngredient" Content="Indsend ny ingredient"  HorizontalAlignment="Left" Margin="276,165,0,0" VerticalAlignment="Top" Height="25" Width="150"/>
+                    
+
+                </Grid>
             </TabItem>
             <TabItem x:Name="tabNewRecipe"
                      Header="Ny Opskrift">
@@ -179,5 +189,5 @@
                 </Grid>
             </TabItem>
         </TabControl>
-    </Grid>  
+    </Grid>
 </Window> 
